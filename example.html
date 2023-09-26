@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .entireWrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            /* padding-top: 20px; */
+        }
+
+        .navBar {
+            width: 600px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #fff;
+            margin-bottom: 110px;
+        }
+
+        .navBar h3 {
+            float: left;
+            margin: 0;
+        }
+
+        .navBar a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        #selected {
+            border-bottom-color: #fff;
+            text-decoration: underline;
+            text-decoration-thickness: 4px;
+            text-underline-offset: 5px;
+        }
+
+        #main{
+            margin-bottom: 200px;
+        }
+
+
+        #button {
+            width: 150px;
+            height: 55px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: 700;
+            font-size: 18px;
+        }
+
+        .footer {
+            color: rgba(255, 255, 255, .5);
+        }
+
+        .footer strong {
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="entireWrapper">
+        <div class="navBar">
+            <h3>Cover</h3>
+            <div>
+                <a id="selected" href="">Home</a>
+                <a href="">Feature</a>
+                <a href="">Contact</a>
+            </div>
+        </div>
+
+        <div id="main">
+            <h1>Cover your page</h1>
+            Cover is a one-page template for building simple and beautiful home<br />pages. Download, edit the text,
+            and
+            add your own fullscreen<br />background photo to make it your own.</p>
+            <button id="button">Learn more</button>
+        </div>
+
+        <div class="footer">
+            <p>Cover template for <strong>Bootstrap</strong>, by <strong>@mdo.</strong></p>
+        </div>
+    </div>
+</body>
+
+</html>
