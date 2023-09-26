@@ -1,11 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <h1>폼화면 입니당</h1>
+    <form>
+        <fieldset>
+            <legend>자기소개</legend>
+            <label for="name">이름</label>
+            <input type="text" name="name" /><br />
+
+            <label for="gender">성별</label>
+            <input type='radio' name='gender' value='female' />여성
+            <input type='radio' name='gender' value='male' />남성<br />
+
+            <label for="birth">생일</label>
+            <input type="date" /><br />
+
+            <label for="major">학부</label>
+            <select>
+                <optgroup label="이공계열">
+                    <option value="csee">전산전자공학부</option>
+                    <option value="csee">글로벌리더십학부</option>
+                    <option value="csee">국제어문학부</option>
+                </optgroup>
+                <optgroup label="인문계열">
+                    <option value="csee">전산전자공학부</option>
+                    <option value="csee">글로벌리더십학부</option>
+                    <option value="csee">국제어문학부</option>
+                </optgroup>
+            </select><br />
+
+            <label for="grade">학년</label>
+            <input type="checkbox" name="grade" value="1" />1학년
+            <input type="checkbox" name="grade" value="2" />2학년
+            <input type="checkbox" name="grade" value="3" />3학년
+            <input type="checkbox" name="grade" value="4" />4학년<br>
+
+            <label for="introduction">자기소개</label>
+            <textarea name="introduction" cols="25" rows="2"></textarea><br />
+
+            <label for="color">가장 좋아하는 색</label>
+            <input type="color" name="color" />
+        </fieldset>
+    </form>
 </body>
+
 </html>
